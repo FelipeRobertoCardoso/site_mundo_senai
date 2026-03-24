@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <title>Mundo Senai</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -15,11 +17,30 @@
         </nav>
     </header>
     <main>
-        <h1>Sensor Ultrassônico</h1>
-        <p>O sensor Ultrassônico é um sensor que detecta e mede a distãncia de objetos através de ondas de altas frequências. Ele emite um som inaudível que percorre o objeto volta. o Calculo da distânica é feito com base no tempo e no eco que leva para retornar.</p>
+        <div>
+            <h1>Sensor Ultrassônico</h1>
+            <p>O sensor Ultrassônico é um sensor que detecta e mede a distãncia de objetos através de ondas de altas
+                frequências. Ele emite um som inaudível que percorre o objeto volta. o Calculo da distânica é feito com
+                base no tempo e no eco que leva para retornar.</p>
+            <p>O sensor contem as entradas (VCC; TRIGGER; ECHO; GND).</p>
+            <p>VCC é o 5V, o positivo; O TRIGGER é onde sai as ondas; o ECHO é de onde as ondas retornam e é possível fazer o cálculo; O GND é o negativo, o próximo de 0V</p>
+            <p>O cálculo da distância é: </p>
+            <img src="https://latex.codecogs.com/svg.image?&space;DISTANCIA=\frac{Tempo\ast\text{Velocidade&space;do&space;Som}}{2}"
+                title=" DISTANCIA=\frac{Tempo\ast\text{Velocidade do Som}}{2}" />
+
+            <p>A velocidade do som é de 340m/s. Logo, você converte de m/s para cm/s, ficando 0,034 cm/s</p>
+            <img src="https://latex.codecogs.com/svg.image?&space;DISTANCIA=\frac{Tempo\ast&space;0.034}{2}"
+                title=" DISTANCIA=\frac{Tempo\ast 0.034}{2}" />
+
+            <!-- Imagem do sensor ultrassonico -->
+
+            <h1>Sensor de Cor</h1>
+            <p></p>
+        </div>
     </main>
     <footer><br><br><br>
-        
+
     </footer>
 </body>
+
 </html>
