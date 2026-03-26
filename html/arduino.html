@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <title>Mundo Senai</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -17,17 +19,111 @@
     </header>
     <main>
         <h1>Arduino</h1>
-        <p>Arduino é uma plataforma de hardware e software de código aberto que possibilita o desenvolvimento de projetos eletrônicos. Ele permite que qualquer pessoa crie, monte e modifique seu próprio arduino. O arduino é composto por um microcontrolador Atmel, circuitos, entradas e saídas.</p>
-        <!-- Imagem de um ardúino -->
+        <p>Arduino é uma plataforma de hardware e software de código aberto que possibilita o desenvolvimento de
+            projetos eletrônicos. Ele permite que qualquer pessoa crie, monte e modifique seu próprio arduino. O arduino
+            é composto por um microcontrolador Atmel, circuitos, entradas e saídas.</p><br>
+
+        <img src="../img/arduino.jpeg" alt="arduino"><br><br>
+
 
         <h2>Entrada Analógica</h2>
-        <p> A Entrada analógica é o processo em que o sinal elétrico é enviado, convertido em valor digital que vai de 0 a 1023, sendo usada em dispositivos que apresentam níveis variados ao invês de 0 e 1. <br> <strong>Volts: ligado = 5V ; Desligado = ~ 0V.(Variado de 0 a 1023 em valor digital)</strong> <br> <strong>Binário: Ligado = 1 : Desligado = 0.</strong> <br> <strong>Físico: Ligado = HIGH; Desligado = LOW.</strong></p>
+        <p> A Entrada analógica é o processo em que o sinal elétrico é enviado, convertido em valor digital que vai de 0
+            a 1023, sendo usada em dispositivos que apresentam níveis variados ao invês de 0 e 1. <br> <strong>Volts:
+                ligado = 5V ; Desligado = ~ 0V.(Variado de 0 a 1023 em valor digital)</strong> <br> <strong>Binário:
+                Ligado = 1 : Desligado = 0.</strong> <br> <strong>Físico: Ligado = HIGH; Desligado = LOW.</strong></p>
+
+        <h3>saída analógica (PWM)</h3>
+        <p>O PWM (Pulse Width Modulation) é uma técnica para simular uma tensão variável usando apenas sinais digitais
+            (ligado/desligado). Ele componentes eletrônicos ligando e desligando a energia muito rápido (cerca de 500 a
+            1000 vezes por segundo). O valor vai de 0 a 255. Pode usa-lo apenas nos pinos do Arduino com o símbolo ~
+            (Ex: 3, 5, 6, 9, 10 e 11).</p>
 
         <h2>Saída Analógica</h2>
-        <p>Saida analógica é o processo em que o microcontrolador converte um valor digital em um sinal analógico, tensão ou corrente para controlar dispositivos. O Arduino não tem saída analógica real, mas simula uma usando PWM. O PWM liga e desliga o sinal rapidamente, e o valor de 0 a 255 define quanto tempo ele fica ligado em cada ciclo, gerando uma tensão média entre 0V e 5V.</p>
-    </main>
-    <footer>
+        <p>Saida analógica é o processo em que o microcontrolador converte um valor digital em um sinal analógico,
+            tensão ou corrente para controlar dispositivos. O Arduino não tem saída analógica real, mas simula uma
+            usando PWM. O PWM liga e desliga o sinal rapidamente, e o valor de 0 a 255 define quanto tempo ele fica
+            ligado em cada ciclo, gerando uma tensão média entre 0V e 5V.</p>
 
+        <h1>CLP</h1>
+        <p>O CLP (Controlador Lógico Programável) é um equipamento utilizado na automação industrial para controlar
+            máquinas e processos de forma eficiente. A CPU 1214C do tipo DC/DC/DC utiliza alimentação em 24Vcc, com
+            entradas digitais e saídas a transistor também em 24Vcc. O modelo oferece alta velocidade de resposta, sendo
+            ideal para aplicações que exigem precisão, como controle por PWM.</p><br>
+
+        <img src="../img/clp.png" alt="clp"><br><br>
+
+        <h2>Entrada e Saida analógica do CLP</h2>
+        <p>Entradas analógicas recebem valores variáveis de sensores, como temperatura, pressão ou nível (ex: 0–10 V ou
+            4–20 mA) e converte esses sinais em grandezas físicas contínuas. <br> Saídas analógicas enviam sinais
+            contínuos para atuadores, como inversores de frequência ou válvulas proporcionais, o que permite controlar a
+            intensidade de um dispositivo</p>
+
+        <h2>Entrada Digital</h2>
+        <p>As entradas digitais do CLP operam com sinais de 24Vcc, identificando apenas dois estados: <br><strong>ligado
+                = 1</strong><br><strong>desligado = 0</strong>. <br> Elas são utilizadas para receber sinais de
+            dispositivos como botões, sensores e chaves fim de curso. Esse tipo de entrada garante leitura rápida e
+            confiável para o controle de processos industriais.</p>
+
+        <h1>Ponte de Wheatstone</h1>
+        <p>A ponte de Wheatstone é um circuito elétrico ligado com 4 resistores utilizado para fazer medição com
+            bastante precisão atráves de pequenas variações de resistência. A variação do sensor é convertida em uma
+            diferença de tensão considerado.</p>
+
+        <img src="../img/ponte_wheatstone.webp" alt="Ponte de Wheatstone"><br>
+        <small>Adaptado de: <a
+                href="https://www.researchgate.net/figure/Figura-21-Representacao-esquematica-de-uma-Ponte-de-Wheatstone_fig1_305392092">ResearchGate</a></small><br><br>
+
+        <h1>Multímetro</h1>
+        <p>O Multímetro é um instrumento de medição utilizado para verificar grandezas elétricas como <br> <strong>-
+                tensão: Medida em Volts (V).</strong> <br> <strong>- corrente: Medida em Ampères (A).</strong> <br>
+            <strong>- resistênci: Medida em Ohms (&#8486;).</strong> <br> Sendo muito usado em manutenção elétrica e
+            eletrônica para testes e diagnósticos de circuitos.
+        </p>
+
+        <img src="../img/multimetro.jpeg" alt="Multímetro"><br><br>
+
+        <h1>Medida de Continuidade</h1>
+        <p>O teste de continuidade é um teste usado para verificar se há passagem de corrente elétrica em um circuito,
+            indicando se um fio, componente ou conexão está íntegro (fechado) ou interrompido (aberto), sendo
+            normalmente realizada com um multímetro que emite um som (bip) quando existe continuidade.</p><br>
+
+        <img src="../img/teste_continuidade.webp" alt="Teste de continuidade"><br>
+        <Small>Simbolo do teste de continuidade no Multímetro</Small><br><br>
+
+        <h2>Exemplo de medição em mili volts do termopar Tipo K</h2>
+
+        <iframe width="360" height="360" src="https://www.youtube.com/embed/u9NotF9zXh0" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe><br><br>
+
+        <h1>Dimerização</h1>
+        <p>A dimerização é o processo de controlar a intensidade de uma carga elétrica, geralmente iluminação, variando
+            a potência fornecida ao dispositivo, permitindo ajustar o brilho de lâmpadas ou a velocidade de alguns
+            equipamentos, sendo muito utilizada para economia de energia e criação de diferentes níveis de iluminação.
+        </p>
+
+        <h2>Exemplo de dimerização com o LED a partir de um programa temporizado</h2><br>
+        <img src="../img/led_demerizacao.png" alt="led demerização"><br>
+        <iframe width="360" height="360" src="https://www.youtube.com/embed/-X4HxwX9tus" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe><br><br>
+
+        <h2>Exemplo de dimerização com o LED a partir de comandos enviados por botão</h2>
+        <img src="../img/programacao_botao_push.png" alt="programa utilizando botao push"><br>
+
+        <iframe width="360" height="360" src="https://www.youtube.com/embed/P7yjcnOYkOw" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </main>
+    <footer><br><br><br>
+        By Felipe &copy; &trade;
     </footer>
 </body>
+
 </html>

@@ -31,23 +31,23 @@
 
             <p>A velocidade do som é de 340m/s. Logo, você converte de m/s para cm/s, ficando 0,034 cm/s.</p>
             <img src="https://latex.codecogs.com/svg.image?&space;DISTANCIA=\frac{Tempo\ast&space;0.034}{2}"
-                title=" DISTANCIA=\frac{Tempo\ast 0.034}{2}" />
+                title=" DISTANCIA=\frac{Tempo\ast 0.034}{2}" /><br><br>
 
-            <!-- Imagem do sensor ultrassonico -->
+            <img src="../img/sensor_ultrassonico.jpg" alt="Sensor Ultrassônico"><br><br>
 
             <h1>Sensor de Cor</h1>
             <p>O Sensor de cor é um componente elétrico que detecta a cor de uma superfície ou de um objeto. Ele funciona emitindo uma luz branca sobre o objeto e medindo a intensidade da luz refletida através de filtros RGB. A luz é convertida em Sinal elétrico(frequência ou dados digitais), permitindo que o Arduino identifique a cor com base nas proporções de luz captadas.</p>
             <p>O sensor de cor contém as entradas: VCC; GND; S0; S1; S; S3.</p>
-            <p>O VCC é a alimentação positiva(5V); GND é a fonte negativa, próxima dos 0V; S0 e S1 servem pra calcular a escala de frequência da saida o sensor deve enviar a resposta para o arduíno; S2 e S3 define quais cores você quer que o arduino leia</p>
+            <p>O VCC é a alimentação positiva(5V); GND é a fonte negativa, próxima dos 0V; S0 e S1 servem pra calcular a escala de frequência da saida o sensor deve enviar a resposta para o arduíno; S2 e S3 define quais cores você quer que o arduino leia</p><br>
 
-            <!-- Imagem do sensor de cor -->
+            <img src="../img/sensor_cor.jpeg" alt="Sensor de cor"><br><br>
 
             <h1>Sensor de vibração</h1>
             <p>O sensor de vibração é um dispositivo que detecta a movimentação de maquinas, objetos ou estruturas. Ele serve para detectar a frequência e intensidade da vibração, sendo convertida em um sinál elétrico. Ele pode servir para detectar falhas, medir impactos, como segurança e para monitorar as estruturas</p>
             <p>O sensor de virbação contem as entradas: VCC; GND; DO; AO;</p>
-            <p>VCC é a alimentação positiva(5V); GND é a fonte negativo, próxima dos 0V; AO(Analog Output) é o que fornece os dados constantes sobre a intensidade de vibração; DO (Digital Output) é o pino que alterna entre os níveis "ALTO" e "BAIXO" quando há vibração.</p>
+            <p>VCC é a alimentação positiva(5V); GND é a fonte negativo, próxima dos 0V; AO(Analog Output) é o que fornece os dados constantes sobre a intensidade de vibração; DO (Digital Output) é o pino que alterna entre os níveis "ALTO" e "BAIXO" quando há vibração.</p><br>
 
-            <!-- Imagem do sensor de vibração -->
+            <img src="../img/sensor_vibracao.jpeg" alt="Sensor de vibração"><br><br>
 
             <h1>Sensor LDR</h1>
             <p>O sensor LDR é um fotorresistor no qual sua resistência elétrica diminui conforme a intensidade da luz vai aumentando sobre a superfície. Quando está no escuro, sua resistência pode chegar nos milhões de ohms&#8486;.</p>
@@ -58,31 +58,34 @@
 
             <p>- <strong>V<sub>out</sub></strong>(Tensão de sáida): Quando o LDR está ligado a um pino analogico. A formula permite fazer a medida da luminosidade</p>
             <p>- <strong>V<sub>cc</sub></strong>: Tensão de alimentação(3.3V ou 5V)</p>
-            <p>- <strong>R<sub>ldr</sub></strong>: Resis^tencia variável do sensor(baixo com luz, alto no escuro</p>
+            <p>- <strong>R<sub>ldr</sub></strong>: Resistência variável do sensor(baixo com luz, alto no escuro)</p>
             <p>- <strong>R<sub>fixo</sub></strong>: Resistor fixo usando(normalmente o 10k&#8486;)</p>
             <p>A corrente(<strong>I</strong>) do circuito pode ser calculada usando a fórmula:</p>
-            <img src="https://latex.codecogs.com/svg.image?\large&space;I=\frac{V_{cc}}{R_{fixo}&plus;R_{ldr}}" title="I=\frac{V_{cc}}{R_{fixo}+R_{ldr}}" />
+            <img src="https://latex.codecogs.com/svg.image?\large&space;I=\frac{V_{cc}}{R_{fixo}&plus;R_{ldr}}" title="I=\frac{V_{cc}}{R_{fixo}+R_{ldr}}" /><br>
 
-            <!-- Imagem do sensor LDR -->
+            <img src="../img/sensor_ldr.jpg" alt="Sensor LDR"><br><br>
 
             <h1>Sensor NTC/PTC</h1>
             <p>O <strong>sensor NTC(Negative Temperature Coefficient)</strong> é um coeficiente de temperatura negativo. Um termoresistor que serve para fazer a medição da temperatura. Quanto maior a temperatura, menor a resistência.</p>
             <p>O <strong>sensor PTC(Positive Temperature Coefficient)</strong> é um coeficiente de temperatura positiva. Um termoresistor que tambem serve para medir a temperautra. A diferença é que quanto maior a temperatura, maior a resistência</p>
             <p>O <strong>sensor NTC</strong> serve para medir as coisas, então ele pode ser usado quando pra saber quando um freezer chega a -10°C, ou a temperatura do motor de um carro.</p>
-            <p>O <strong>sensor PTC</strong> serve como um interruptor que reage ao calor. Se caso algo estiver passando do limite estando muito quente, o sensor aumenta tanto a resistência que a eletricidade quase não passa, protegendo o circuito de queimar</p>
+            <p>O <strong>sensor PTC</strong> serve como um interruptor que reage ao calor. Se caso algo estiver passando do limite estando muito quente, o sensor aumenta tanto a resistência que a eletricidade quase não passa, protegendo o circuito de queimar</p><br>
 
-            <!-- Imagem dos sensores NTC/PTC -->
+            <img src="../img/sensores_ptc_ntc.jpeg" alt="Sensores NTC e PTC"><br>
+            <small>Adaptado de: <a href="https://grupoitech.com.br/produto/ptc-e-ntc/">itech</a></small><br><br>
 
             <h1>Atuador Relé</h1>
 
-            <p>O Atuador é um sensor é um atuador que serve permite um circuito de baixa potência(como o Arduino com 5V) controlar um circuito de alta potência(como um ventilador de 110V /220V.</p>
+            <p>O Atuador é um sensor é um atuador que serve permite um circuito de baixa potência(como o Arduino com 5V) controlar um circuito de alta potência(como um ventilador de 110V /220V).</p>
             <p>Quando o Arduino envia 5V para o relé,a bobia de dentro do atuador cria um campo magnético que "puxa" uma alavanca de ferro. Essa alavanca encosta nos circuitos que contem alta tensõ, fazendo eles funcionarem.</p>
-            <p>No lado do Arduino, oRelé possui as entradas VCC e GND, que são as fontes positivas e negativas do atuador. Além disso, tem o IN, que é onde vai em um pino Digital. Quando o pino está HIGH, ele faz um baruho de click.</p>
+            <p>No lado do Arduino, oRelé possui as entradas VCC e GND, que são as fontes positivas e negativas do atuador. Além disso, tem o IN, que é onde vai em um pino Digital. Quando o pino está HIGH, ele faz um baruho de click.</p><br>
             
-            <!-- Imagem do atudor relé -->
+            <img src="../img/atuador_rele.jpg" alt="Atuador Relé"><br><br>
 
             <h1>Termopar Tipo K</h1>
-            <p>O Termopar Tipo K(Cromel/Alumel) converte energia térmica diretamente em energia elétrica(mV). Para sensores de resistência que exigem alta precisão, como o PT100 ou Células de Carga, pe utilizado o circuito de Ponte de Wheatstone para converter variações de resistência em sinal de tensão. O Termopar Tipo K tem uma faixa: <strong>-200°C a +1260°C</strong></p>
+            <p>O Termopar Tipo K(Cromel/Alumel) converte energia térmica diretamente em energia elétrica(mV). Para sensores de resistência que exigem alta precisão, como o PT100 ou Células de Carga, pe utilizado o circuito de Ponte de Wheatstone para converter variações de resistência em sinal de tensão. O Termopar Tipo K tem uma faixa: <strong>-200°C a +1260°C</strong></p><br>
+
+            <img src="../img/termopar_k.jpeg" alt="Termopar tipo K"><br><br>
 
             <h2>Tipos de Termopares</h2>
             <p><strong>Termopar Tipo J(Ferro/Constantan):</strong> Utilizado em indústrias de plásticos, fornos e moldes. <br> Faixa: <strong>-40°C</strong> a <strong>+750°C</strong></p>
@@ -92,11 +95,15 @@
             <h1>Como selecionar um sensor de temperatura?</h1>
             <p>Escolher um sensor de temperatura não depende apenas do preço, mas sim da compatibilidade com o ambiente ou o projeto. Por isso é utilizado a escala de temperatura, para ter uma noção de qual sensor apropriado escolher.</p>
             <p>Se a <strong>temperatura for baixa(-200°C a 0°C)</strong>, você pode escolher um <strong>Termopar tipo T ou um PT100</strong>. <br> Se tiver um ambiente com <strong>temperatura maior(100°C a 300°C)</strong>, você pode utilizar um <strong>termoresistor NTC</strong>. <br> Se o ambiente tiver em <strong>altas temperaturas (300°C até 1300°C)</strong>, utilize um <strong>Termopar Tipo K</strong>.</p>
+            
+            <h1>Trimpot</h1>
+            <p>Um trimpot (potenciômetro de ajuste) é um componente eletrônico usado para ajustar manualmente a resistência em um circuito, permitindo regulagens finas de tensão ou corrente, sendo normalmente utilizado para calibração e ajustes internos em equipamentos eletrônicos.</p><br>
 
+            <img src="../img/trimpot.jpg" alt="Trimpot">
         </div>
     </main>
     <footer><br><br><br>
-
+        By Felipe &copy; &trade;
     </footer>
 </body>
 
