@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(176, 179, 182);
+    text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 50px;
+}
+
+nav {
+    background-color: rgb(111, 111, 184);
+}
+
+nav a {
+    margin-right: 8px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.Conteudo {
+    margin-top: -20px;
+    padding: 2px 12px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+
+
+img, iframe {
+    max-width: 100%;
+    height: 360px;
+    width: 360px;
+    border-radius: 8px;
+}

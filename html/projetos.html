@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <title>Mundo Senai</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -16,10 +18,59 @@
         </nav>
     </header>
     <main>
-        <h1></h1>
+            <h1>Sete Segmentos com Sensor Ultrassônico</h1>
+            <div class="Conteudo">
+                <img src="../img/sete_segmentos_ultrassonico.png" alt="Sensor de sete segmentos ultrassônico"><br><br>
+                <iframe width="360" height="360" src="https://www.youtube.com/embed/G-syg0B9zKs" title="YouTube Shorts"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe><br><br>
+            </div>
+
+            <h1>Sensor Ultrassônico com LED</h1>
+            <div class="Conteudo">
+                <img src="../img/sesnor_ultrassonico_LED.png" alt="Sensor ultrassônico com LED"><br><br>
+                <iframe width="360" height="360" src="https://www.youtube.com/embed/EYoMKDT_tBU" title="YouTube Shorts"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <h1>Medida do LED em miliVolts com o AnalogWrite</h1>
+            <div class="Conteudo">
+                <h2>Medida do LED com analogWrite(255)</h2>
+                
+                <img src="../img/analog_write_255.jpeg" alt="Medida com analogWrite no 255">
+                <p>O resultado foi de: <strong>1805mV</strong> </p>
+                <hr>
+                <h2>Medida do LED com analogWrite(127)</h2>
+                <img src="../img/analog_write_127.jpeg" alt="Medida com analogWrite no 127">
+                <p>O resultado foi de: <strong>900mV</strong> </p>
+                <hr>
+                <h2>Medida do LED com analogWrite(63)</h2>
+                
+                <img src="../img/analog_write_63.jpeg" alt="Medida com analogWrite no 63">
+                <p>O resultado foi de: <strong>447mV</strong> </p>
+            </div>
+            <h1>Medidas em volts do LED, Resistor e das fontes GND e VCC</h1>
+            <div class="Conteudo">
+                <h2>Medida do LED</h2>
+
+                <img src="../img/medida_led.jpeg" alt="medida do LED em mV">
+                <hr>
+                <h2>Medida do Resistor</h2>
+                <img src="../img/medida_resistor.jpeg" alt="medida do resistor em mV">
+                <hr>
+                <h2>Medida da fonte de alimentação(GND/VCC)</h2>
+
+                <img src="../img/medida_gnd_vcc.jpeg" alt="Medida das fonte de alimentação negativa e positiva"><br>
+                <p>Chegamos a conclusão que: <br> <strong> - LED: Equivale a 1.79V</strong> <br> <strong> - Resistor: Equivale a 3.2V</strong> <br> <strong> - GND e VCC: Equivale a 5V.</strong> <br> A soma do LED com o Resistor dá <strong>4.99V</strong>, basicamente 5V. As vezes a soma pode não dar 5V pois a tensão sempre pode variar.</p>
+            </div>
     </main>
-    <footer>
-        
+    <footer><br><br><br>
+        By Felipe  &trade; &copy;
     </footer>
 </body>
+
 </html>
